@@ -1,0 +1,36 @@
+{
+    "name": "sunyang/blog",
+    "description": "sunyang blog",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sunyang",
+            "email": "644894524@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "catfan/medoo": "1.4.*",
+        "monolog/monolog": "1.23.0",
+        "smarty/smarty": "~3.1",
+        "colinmollenhour/credis": "1.8.*",
+        "elasticsearch/elasticsearch": "5.3.*",
+        "illuminate/database": "v5.5.2"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    },
+    "autoload": {
+        "files": [
+            "common/define.php", "common/function.php"
+        ],
+        "psr-4": {
+            "core\\": "core/",
+            "apps\\": "apps/"
+        }
+    }
+}
